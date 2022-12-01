@@ -12,5 +12,6 @@ License: file LICENSE
 Imports:
   Rcpp (>= 1.0.9)
 LinkingTo:
+  BH,
   Rcpp
 RoxygenNote: 7.1.1

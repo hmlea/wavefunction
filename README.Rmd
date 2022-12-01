@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The **wavefunction** package is used to calculate the hydrogen wave function given the quantum numbers *n*, *l*, and *m* and a set of spherical coordinates given in *r*, $\Theta$, and $\Phi$. The **wavefunction** package uses the [Boost implementation](https://www.boost.org/doc/libs/1_80_0/libs/math/doc/html/math_toolkit/sf_poly/sph_harm.html) of the spherical harmonics, providing fast and accurate calculations in R.
+The **wavefunction** package is used to calculate the hydrogen wave function given the quantum numbers *n*, *l*, and *m* and a set of spherical coordinates given in *r*, $\Theta$, and $\Phi$. The **wavefunction** package uses the [Boost implementation](https://www.boost.org/doc/libs/1_80_0/libs/math/doc/html/math_toolkit/sf_poly/sph_harm.html) of the spherical harmonics via the [bh](https://github.com/eddelbuettel/bh) package. This allows much faster and more efficient calculations of the hydrogen wave function.
 
 ## Installation
 
