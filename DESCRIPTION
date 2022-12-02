@@ -1,7 +1,7 @@
 Package: wavefunction
 Type: Package
 Title: Calculate the Wave Function of the Hydrogen Atom
-Version: 1.0
+Version: 1.0.0
 Encoding: UTF-8
 Date: 2022-11-28
 Author: Hayden Leatherwood
