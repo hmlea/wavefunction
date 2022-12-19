@@ -27,7 +27,7 @@ The **wavefunction** package is used to calculate the hydrogen wave function giv
 
 The easiest way to install the package is by using [devtools](https://devtools.r-lib.org/) in the R console. Installing with devtools only takes one step and installs the package straight from GitHub:
 
--   `devtools::install_github("hmlea/wavefunction")`
+    devtools::install_github("hmlea/wavefunction")
 
 ### Build and Install Manually
 
@@ -40,4 +40,14 @@ You can also build and install the package manually:
 
 ## Usage
 
--   `cpp_psi(n, l, m, r, theta, phi)`: calculates the $\Psi$ value of the hydrogen wavefunction of given quantum numbers at spherical coordinates
+Given quantum numbers and a set of spherical coordinates, the $\Psi$ value of the hydrogen wave function can be calculated with the following function:
+
+    cpp_psi(n, l, m, r, theta, phi)
+
+-   `n`   The principle quantum number, n
+-   `l`   The azimuthal quantum number, l
+-   `m`   The magnetic quantum number, m
+-   `r`   The radius in spherical coordinates
+-   `theta`   The angle $\Theta$ in spherical coordinates
+-   `phi`   The angle $\Phi$ in spherical coordinates
+

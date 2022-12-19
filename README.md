@@ -8,8 +8,8 @@
 
 The **wavefunction** package is used to calculate the hydrogen wave
 function given the quantum numbers *n*, *l*, and *m* and a set of
-spherical coordinates given in *r*, *Θ*, and *Φ*. The **wavefunction**
-package uses the [Boost
+spherical coordinates given in *r*, $\Theta$, and $\Phi$. The
+**wavefunction** package uses the [Boost
 implementation](https://www.boost.org/doc/libs/1_80_0/libs/math/doc/html/math_toolkit/sf_poly/sph_harm.html)
 of the spherical harmonics via the
 [bh](https://github.com/eddelbuettel/bh) package. This allows much
@@ -24,7 +24,7 @@ The easiest way to install the package is by using
 with devtools only takes one step and installs the package straight from
 GitHub:
 
--   `devtools::install_github("hmlea/wavefunction")`
+    devtools::install_github("hmlea/wavefunction")
 
 ### Build and Install Manually
 
@@ -39,6 +39,15 @@ You can also build and install the package manually:
 
 ## Usage
 
--   `cpp_psi(n, l, m, r, theta, phi)`: calculates the *Ψ* value of the
-    hydrogen wavefunction of given quantum numbers at spherical
-    coordinates
+Given quantum numbers and a set of spherical coordinates, the $\Psi$
+value of the hydrogen wave function can be calculated with the following
+function:
+
+    cpp_psi(n, l, m, r, theta, phi)
+
+-   `n`   The principle quantum number, n
+-   `l`   The azimuthal quantum number, l
+-   `m`   The magnetic quantum number, m
+-   `r`   The radius in spherical coordinates
+-   `theta`   The angle $\Theta$ in spherical coordinates
+-   `phi`   The angle $\Phi$ in spherical coordinates
